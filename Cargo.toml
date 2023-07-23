@@ -1,0 +1,15 @@
+[package]
+name = "rs-username-checker"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+dotenv = "0.15.0"
+tracing = "0.1.37"
+tracing-subscriber = { version = "0.3.16", features = ["env-filter"] }
+tokio = { version = "1.27.0", features = ["macros", "tracing", "rt-multi-thread"] }
+grammers-client = { git = "https://github.com/Lonami/grammers" }
+grammers-session = { git = "https://github.com/Lonami/grammers" }
+grammers-tl-types = { git = "https://github.com/Lonami/grammers" }
+async-channel = "1.8.0"
+clap = { version = "4.3.4", features = ["color", "derive"] }
